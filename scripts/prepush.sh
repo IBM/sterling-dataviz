@@ -2,7 +2,7 @@
 
 set -e
 
-GITHUB_UPSTREAM=git@github.com:IBM/carbon-charts.git
+GITHUB_UPSTREAM=git@github.com:IBM/sterling-dataviz.git
 
 lerna run lint
 

@@ -3,8 +3,8 @@
 set -e
 
 rollup -c
-tsc
-cp *.md dist/
+# tsc
+cp README.md dist/
 cp package.json dist/
 cp -a src/styles/. dist/styles
 node-sass --include-path ../../node_modules dist/styles/styles.scss > dist/styles.css

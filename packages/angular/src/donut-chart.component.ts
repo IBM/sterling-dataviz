@@ -5,27 +5,24 @@ import {
 
 import { BaseChart } from "./base-chart.component";
 
-import { DonutChart } from "@carbon/charts";
+import { DonutChart } from "@ibm-sterling/charts";
 
 /**
- * Wrapper around `DonutChart` in carbon charts library
+ * Wrapper around `DonutChart` in sterling charts library
  *
  * Most functions just call their equivalent from the chart library.
  */
 @Component({
 	selector: "ibm-donut-chart",
-	template: `
-		<div #nChart class="ibm-chart-container">
-		</div>
-	`
+	template: ``
 })
 export class DonutChartComponent extends BaseChart implements AfterViewInit {
 	/**
-	 * Runs after view init to create a chart, attach it to `chartRef` and draw it.
+	 * Runs after view init to create a chart, attach it to `elementRef` and draw it.
 	 */
 	ngAfterViewInit() {
 		this.chart = new DonutChart(
-			this.chartRef.nativeElement,
+			this.elementRef.nativeElement,
 			{
 				data: this.data,
 				options: this.options

@@ -1,23 +1,23 @@
 {
-	"name": "@carbon/charts-react",
-	"version": "0.16.24",
-	"description": "Carbon charting components for React",
+	"name": "@ibm-sterling/charts-react",
+	"version": "0.23.1",
+	"description": "Sterling charting components for React",
 	"main": "./bundle.js",
 	"scripts": {
 		"start": "yarn run storybook",
 		"build": "bash build.sh",
 		"storybook": "start-storybook -p 9006 -c .storybook -s ./assets",
-		"demo:build": "build-storybook -o demo/bundle",
+		"demo:build": "build-storybook -o demo/bundle --quiet",
 		"clean": "rm -rf dist demo/bundle"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:IBM/carbon-charts.git"
+		"url": "git@github.com:ibm/sterling-dataviz.git"
 	},
 	"license": "Apache-2.0",
 	"author": "IBM",
 	"keywords": [
-		"carbon",
+		"sterling",
 		"charts",
 		"react",
 		"dataviz",
@@ -40,11 +40,11 @@
 		"scss"
 	],
 	"bugs": {
-		"url": "https://github.com/IBM/carbon-charts/issues"
+		"url": "https://github.com/ibm/sterling-dataviz/issues"
 	},
-	"homepage": "https://github.com/IBM/carbon-charts#readme",
+	"homepage": "https://github.com/ibm/sterling-dataviz#readme",
 	"dependencies": {
-		"@carbon/charts": "^0.16.24"
+		"@ibm-sterling/charts": "^0.23.1"
 	},
 	"peerDependencies": {
 		"react": "^16.6.3",
@@ -64,7 +64,6 @@
 		"babel-preset-react": "6.24.1",
 		"base64-inline-loader": "1.1.0",
 		"css-loader": "0.28.7",
-		"img-loader": "2.0.0",
 		"node-sass": "4.10.0",
 		"react": "16.6.3",
 		"react-dom": "16.6.3",

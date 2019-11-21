@@ -3,8 +3,8 @@
 set -e # exit with nonzero exit code if anything fails
 
 # Git user info configs
-git config --global user.email "carbon@us.ibm.com"
-git config --global user.name "carbon-bot"
+git config --global user.email "sterlingcomponents@ca.ibm.com"
+git config --global user.name "Sterling Bot"
 
 # Add github token to git credentials
 git config credential.helper "store --file=.git/credentials"
@@ -23,8 +23,6 @@ else
 
 	# authenticate with the npm registry
 	npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN -q
-
-	yarn run build-all
 
 	node scripts/clean-package-jsons.js
 

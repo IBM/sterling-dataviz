@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { DonutChart } from '@carbon/charts';
+import { DonutChart } from '@ibm-sterling/charts';
 import CcvBaseChart from './ccv-base-chart.vue';
 
 export default {

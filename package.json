@@ -1,10 +1,10 @@
 {
-	"name": "@carbon/charts-monorepo",
+	"name": "@ibm-sterling/charts-monorepo",
 	"private": true,
-	"description": "Carbon charting components, lerna monorepo",
+	"description": "Sterling charting components, lerna monorepo",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:IBM/carbon-charts.git"
+		"url": "git@github.com:IBM/sterling-dataviz.git"
 	},
 	"keywords": [
 		"charts"

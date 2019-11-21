@@ -5,27 +5,24 @@ import {
 
 import { BaseChart } from "./base-chart.component";
 
-import { ScatterChart } from "@carbon/charts";
+import { ScatterChart } from "@ibm-sterling/charts";
 
 /**
- * Wrapper around `ScatterChart` in carbon charts library
+ * Wrapper around `ScatterChart` in sterling charts library
  *
  * Most functions just call their equivalent from the chart library.
  */
 @Component({
 	selector: "ibm-scatter-chart",
-	template: `
-		<div #nChart class="ibm-chart-container">
-		</div>
-	`
+	template: ``
 })
 export class ScatterChartComponent extends BaseChart implements AfterViewInit {
 	/**
-	 * Runs after view init to create a chart, attach it to `chartRef` and draw it.
+	 * Runs after view init to create a chart, attach it to `elementRef` and draw it.
 	 */
 	ngAfterViewInit() {
 		this.chart = new ScatterChart(
-			this.chartRef.nativeElement,
+			this.elementRef.nativeElement,
 			{
 				data: this.data,
 				options: this.options

@@ -30,7 +30,7 @@ module.exports = {
 	},
 	resolve: {
 		// Add ".ts" and ".tsx" as a resolvable extension.
-		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+		extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".json", ".js"]
 	},
 	module: {
 		rules: [
@@ -80,7 +80,7 @@ module.exports = {
 	devServer: {
 		contentBase: "./demo",
 		host: "0.0.0.0",
-		port: 9001,
+		port: process.env.PORT || 9001,
 		historyApiFallback: true,
 		disableHostCheck: true
 	}
