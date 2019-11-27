@@ -5418,9 +5418,6 @@ var baseBarChart = _tools__WEBPACK_IMPORTED_MODULE_0__["Tools"].merge({}, axisCh
     bars: {
         maxWidth: 16
     },
-    timeScale: _tools__WEBPACK_IMPORTED_MODULE_0__["Tools"].merge(timeScale, {
-        addSpaceOnEdges: true
-    }),
     tooltip: barChartTooltip
 });
 /**
