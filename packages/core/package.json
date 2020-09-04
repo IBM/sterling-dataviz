@@ -82,7 +82,7 @@
     "karma-webpack": "3.0.5",
     "lerna": "3.13.4",
     "mini-css-extract-plugin": "0.4.4",
-    "node-sass": "4.10.0",
+    "node-sass": "4.14.1",
     "raw-loader": "0.5.1",
     "rollup": "1.21.4",
     "rollup-plugin-commonjs": "10.1.0",
